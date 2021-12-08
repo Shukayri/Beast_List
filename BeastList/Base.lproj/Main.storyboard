@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C9n-AT-KI0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hL3-3y-hui">
+            <objects>
+                <viewController id="C9n-AT-KI0" customClass="ViewController" customModule="BeastList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oh3-im-8XF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEZ-24-e2O">
+                                <rect key="frame" x="0.0" y="119" width="414" height="777"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="kls-zm-IfZ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kls-zm-IfZ" id="Buf-GS-Gvb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXC-Lo-ryT">
+                                <rect key="frame" x="317" y="68" width="88" height="31"/>
+                                <color key="backgroundColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9WB-7t-JV5"/>
+                                    <constraint firstAttribute="width" constant="88" id="AzM-d2-fxz"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Beast"/>
+                                <connections>
+                                    <action selector="myBeastButton:" destination="C9n-AT-KI0" eventType="touchUpInside" id="YhZ-RU-e0m"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UPT-PT-zRc">
+                                <rect key="frame" x="20" y="66" width="287" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="Lu6-EM-dYW"/>
+                                    <constraint firstAttribute="height" constant="34" id="zxk-40-fn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Viw-BH-Jq7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UPT-PT-zRc" firstAttribute="top" secondItem="Viw-BH-Jq7" secondAttribute="top" constant="22" id="I9Z-iM-NQx"/>
+                            <constraint firstItem="UPT-PT-zRc" firstAttribute="leading" secondItem="Viw-BH-Jq7" secondAttribute="leading" constant="20" id="Jq2-OP-l1H"/>
+                            <constraint firstItem="iEZ-24-e2O" firstAttribute="leading" secondItem="Viw-BH-Jq7" secondAttribute="leading" id="Nc2-Y2-FRz"/>
+                            <constraint firstItem="VXC-Lo-ryT" firstAttribute="leading" secondItem="UPT-PT-zRc" secondAttribute="trailing" constant="10" id="VUQ-P0-zaH"/>
+                            <constraint firstItem="VXC-Lo-ryT" firstAttribute="top" secondItem="Viw-BH-Jq7" secondAttribute="top" constant="24" id="gDN-vl-amp"/>
+                            <constraint firstItem="iEZ-24-e2O" firstAttribute="top" secondItem="UPT-PT-zRc" secondAttribute="bottom" constant="19" id="ja3-BD-uHr"/>
+                            <constraint firstAttribute="bottom" secondItem="iEZ-24-e2O" secondAttribute="bottom" id="jc5-qu-aOk"/>
+                            <constraint firstItem="Viw-BH-Jq7" firstAttribute="trailing" secondItem="VXC-Lo-ryT" secondAttribute="trailing" constant="9" id="nhy-Oa-gJd"/>
+                            <constraint firstItem="iEZ-24-e2O" firstAttribute="trailing" secondItem="Viw-BH-Jq7" secondAttribute="trailing" id="tt2-A1-TXD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myBeastButton" destination="VXC-Lo-ryT" id="GPc-Ta-nAw"/>
+                        <outlet property="tableView" destination="iEZ-24-e2O" id="f37-QP-mAw"/>
+                        <outlet property="textFieldTask" destination="UPT-PT-zRc" id="ajy-eb-zXU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYN-20-y4K" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
